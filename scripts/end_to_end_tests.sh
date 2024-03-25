@@ -11,7 +11,7 @@ case "${unameOut}" in
     *)          ISMAC=0;;
 esac
 
-TIMESCALE_IMAGE="${1:-"timescale/timescaledb:latest-pg14"}"
+TIMESCALE_IMAGE="${1:-"timescale/timescaledb-ha:pg14.5-ts2.8.1-p1"}"
 SCRIPT_DIR="$(cd "$(dirname "${0}")" && pwd)"
 ROOT_DIR=$(dirname "${SCRIPT_DIR}")
 DB_URL="localhost:5432"
